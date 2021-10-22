@@ -1,0 +1,38 @@
+.menubar {
+  width: 400px;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+  &.active {
+    right: 0px;
+    transition: all 1s ease;
+  }
+
+  ul {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    font-weight: 300;
+    li {
+      margin-top: 25px;
+      font-size: 30px;
+      color: blue;
+
+      a {
+        text-decoration: none;
+      }
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+}
